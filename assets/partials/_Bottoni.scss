@@ -1,0 +1,13 @@
+$button-map: (
+  blu: ($color-b-uno, 25px, none,white),
+  arancio: ($color-b-due, 25px, none,white),
+  verde: ($color-b-tre, 25px, none,white),
+);
+@each $name, $value in $button-map{
+    .btn-#{$name}{
+        background-color: nth($value , 1 ) ;
+        border-radius: nth($value , 2 ) ;
+        border: nth($value , 3 ) ;
+        color: nth($value,4);
+    }
+}

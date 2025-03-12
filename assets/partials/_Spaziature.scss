@@ -1,0 +1,29 @@
+$padding-map: (
+  sm: 1em,
+  normal: 2em,
+  md: 3em,
+  lg: 4em,
+  xl: 5em,
+  xxl: 6em
+);
+
+@each $name, $value in $padding-map {
+  .padding-#{$name} {
+    padding: $value;
+  }
+}
+
+$margin-map: (
+  sm: 1em,
+  normal: 2em,
+  md: 3em,
+  lg: 4em,
+  xl: 5em,
+  xxl: 6em
+);
+
+@each $name, $value in $padding-map {
+  .margin-#{$name} {
+    margin: $value;
+  }
+}

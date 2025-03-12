@@ -1,0 +1,9 @@
+$font : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$font-xl: 2em;
+$font-m: 1em;
+$font-s:0.5em;
+@mixin title-big {
+    font-size: $font-xl;
+    text-align: center;
+    
+}

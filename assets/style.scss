@@ -1,0 +1,42 @@
+@import "./partials/Reset";
+@import "./partials/Colori";
+@import "./partials/Font";
+@import "./partials/Spaziature";
+@import "./partials/Bottoni";
+@import "./partials/MixinsGenerici";
+@import "./partials/Animazioni";
+
+body{
+    font-family: $font;
+    font-size: $font-m;
+}
+
+div.padding-normal{
+    color: $color-font;
+    background-color:$color-bg ;
+    display: flex;
+    align-items: center;
+  img{
+    width: 40%;
+  }
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+   
+    img{
+        width: 5%;
+    }
+    ul{
+        display: flex;
+       
+    }
+}
+.griglia{
+    @include grid(4)
+}
